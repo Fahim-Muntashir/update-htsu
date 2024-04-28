@@ -1,0 +1,580 @@
+/* Global Style */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn {
+    background-color: #0A9A1D;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+}
+
+
+section {
+    height: 100vh;
+}
+
+nav {
+    background-color: white;
+    padding: 40px 0px 0px 40px;
+    height: 16vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav i {
+    font-size: 30px;
+    padding-top: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    display: none;
+}
+
+nav .profile {
+    display: block;
+    margin-right: 20px;
+    font-size: 40px;
+    color: #0A9A1D;
+}
+
+
+
+nav img {
+    height: 50px;
+    margin-bottom: 0px;
+}
+
+.logo-container {
+    display: flex
+}
+
+.bottom-div {
+    background-color: green;
+    height: 10vh;
+    margin-top: auto;
+}
+
+.main-bg {
+    background-color: #75D975;
+    padding: 20px 20px;
+    height: 74vh;
+    display: grid;
+    align-items: center;
+    /* Adjusted padding for smaller devices */
+}
+
+
+/* OverViewe page Style Start
+----------------------------------------------------------------
+---------------------------*/
+.dashboard-bg {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    height: 74vh;
+}
+
+.overview-container {
+    display: grid;
+    grid-template-columns: 7.5fr 2.5fr;
+}
+
+
+/* SideNav */
+
+.sidenav {
+    display: grid;
+    text-align: center;
+}
+
+
+
+/* .sidenav  {} */
+.header-close {
+    background-color: rgb(59, 255, 5);
+    font-size: 40px;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7c0c0c;
+    cursor: pointer;
+    display: none;
+}
+
+.sidenav a {
+    padding: 14px 15px;
+    border: 1px solid black;
+    border-bottom: none;
+    font-size: large;
+    font-weight: 570;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: black
+}
+
+.sidenav a:hover {
+    background-color: #0A9A1D;
+    color: #fff;
+}
+
+.sidenav .active {
+    background-color: #0A9A1D;
+    color: white;
+}
+
+/* Show sidebar */
+.show-sidebar {
+    left: 0;
+}
+
+/* Add padding to main content */
+.main-pd {
+    padding-left: 250px;
+    /* Adjust as needed */
+}
+
+/* sidenav end */
+
+/* Overviw Dashboard Start */
+
+.main-content h1 {
+    text-align: center;
+    margin-bottom: 20pxs;
+}
+
+
+.overview-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px 30px;
+    padding: 10px 20px;
+}
+
+.overview-content div {
+    background-color: #E0F8E0;
+    margin: 3px;
+    border-radius: 30px;
+    padding: 10px
+}
+
+.overview-content div h4 {
+    text-align: center;
+    margin: 10px;
+}
+
+/* Table styles for Exam */
+.upcoming-exam {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+.upcoming-exam th,
+.upcoming-exam td {
+    padding: 4px;
+    text-align: center;
+}
+
+
+.class-foram .class-foram-container {
+    display: flex;
+}
+
+.overview {
+    border-top: 1px solid black;
+}
+
+.overview h1 {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.view-all {
+    color: green;
+    font-weight: bold;
+    width: full;
+    margin-left: 80%;
+}
+
+/* performance section */
+
+.circle-persent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle-persent div {
+    padding: 16px;
+    border-radius: 50%;
+}
+
+.attendence-circle {
+    border: 22px solid #0A9A1D;
+}
+
+.quiz-circle {
+    border: 22px solid rgb(3, 3, 240);
+}
+
+.mid-circle {
+    border: 22px solid red;
+}
+
+.mini-circle-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Class and Foram */
+
+.class-foram {
+    display: grid;
+    grid-column-gap: 8px !important;
+    background-color: white !important;
+    padding: 0px !important;
+}
+
+.class-foram-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 !important;
+}
+
+.class-foram-container div {
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.class-foram-container .sideLink {
+    background-color: #0A9A1D;
+    width: 60px;
+    border-radius: 0px 30px 30px 0px;
+    margin: 0;
+    font-size: 100px;
+    color: #ffff;
+}
+
+.class-foram-container .sideLink img {
+    width: 100px;
+    height: 80px;
+}
+
+.class-foram-container div p {
+    font-weight: bolder;
+    text-align: center;
+    margin: 0px 80px;
+}
+
+/* Overview Section ended Sedule Section Start */
+.sechedule {
+    background-color: #9acf9ad8;
+}
+
+.sechedule-header {
+    background-color: #75D975;
+    padding: 30px 10px 10px 10px;
+}
+
+.sechedule-card {
+    background-color: #D6EDD6;
+    margin: 10px 5px;
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+
+.sechedule-card h4 {
+    margin-bottom: 15px;
+}
+
+.sechedule-card div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Course_Container Style 
+
+-----------------------------------*/
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin: 30px 40px;
+}
+
+.course-container .course h4 {
+    background-color: #0A9A1D;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+
+.course-container .course div {
+    background-color: #E0F8E0;
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.course-container .course p {
+    padding: 20px 0;
+    margin-right: 80px;
+}
+
+.course-container .course .btn {
+    border-radius: 10px !important;
+    font-size: 14px;
+    padding: 8px 20px;
+    margin-bottom: 20px;
+}
+
+/* Attendence */
+.attendence-container {
+    display: flex;
+    margin: 200px 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.attendence-container h1 {
+    margin-bottom: 20px;
+}
+
+/* Profile */
+
+.profile-container {
+    align-items: center;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.profile-container div {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.profile-container h5 {
+    font-size: 23px;
+    margin: 10px 0;
+}
+
+.profile-container p {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.profile-container i {
+    font-size: 100px;
+    color: #0A9A1D;
+}
+
+.active-profile {
+    background-color: #0A9A1D;
+    color: white !important;
+    padding: 0;
+}
+
+.profile-link {
+    text-decoration: none;
+}
+
+/* Performance Section */
+
+.performance-persent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.performance-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    gap: 60px;
+}
+
+.performance-container h3 {
+    text-align: center;
+}
+
+
+.performance-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+    .form {
+        padding: 30px 70px;
+    }
+
+    .form input {
+        padding: 5px 40px;
+    }
+
+    .dashboard-bg {
+        grid-template-columns: 1fr 4fr;
+        /* Example adjustment */
+    }
+
+    .main-bg {
+        padding: 20px;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    nav {
+        padding: 20px;
+    }
+
+    nav img {
+        height: 40px;
+        margin-bottom: 0px;
+    }
+
+    .form-bg {
+        padding: 10px 10px;
+    }
+
+    .form {
+        padding: 30px 20px;
+    }
+
+    .form input {
+        padding: 5px 20px;
+    }
+
+    .dashboard-bg {
+        grid-template-columns: 1fr;
+        /* Example adjustment */
+        height: auto;
+        /* Adjust height as needed */
+    }
+
+    .overview-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .overview-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px 30px;
+        padding: 10px 20px;
+    }
+
+
+    nav i {
+        display: block;
+        font-size: 30px;
+        padding-top: 10px;
+    }
+
+    .sidenav {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        /* Initially hide the sidebar */
+        width: 250px;
+        height: 100%;
+        background-color: #ffffff;
+        transition: left 0.3s ease;
+    }
+
+    .header-close {
+        display: block;
+    }
+
+    .sidenav.active {
+        left: 0;
+        /* Show the sidebar when active class is added */
+    }
+
+    .dashboard-bg {
+        grid-template-columns: 1fr;
+        /* Example adjustment */
+        height: auto;
+        /* Adjust height as needed */
+    }
+
+
+    /* Course_Container Style 
+-----------------------------------*/
+
+    .course-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin: 30px 40px;
+        margin-bottom: 100px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .form-bg {
+        height: 74vh;
+    }
+
+    .overview-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px 30px;
+        padding: 10px 20px;
+    }
+
+    /* Course_Container Style 
+
+-----------------------------------*/
+
+    .course-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        margin: 30px 40px;
+    }
+
+}
